@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NServiceBus.ObjectBuilder;
 using NServiceBus.ObjectBuilder.CastleWindsor;
 using NServiceBus.ObjectBuilder.Common.Config;

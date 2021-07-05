@@ -1,9 +1,5 @@
-﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Spring.Objects.Factory.Support;
-using NServiceBus.ObjectBuilder;
 
 namespace NServiceBus.ObjectBuilder.Spring
 {

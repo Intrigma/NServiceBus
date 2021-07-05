@@ -2,9 +2,6 @@ using System;
 using Common.Logging;
 using NServiceBus;
 using Messages;
-using NServiceBus.MessageInterfaces.MessageMapper.Reflection;
-using NServiceBus.ObjectBuilder;
-using System.Collections.Generic;
 
 namespace Client
 {

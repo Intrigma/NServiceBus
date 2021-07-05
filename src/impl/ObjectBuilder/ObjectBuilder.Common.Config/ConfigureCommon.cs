@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NServiceBus.ObjectBuilder;
 
 namespace NServiceBus.ObjectBuilder.Common.Config
 {

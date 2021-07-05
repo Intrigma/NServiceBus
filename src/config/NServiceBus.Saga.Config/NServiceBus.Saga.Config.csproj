@@ -41,10 +41,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\CommonAssemblyInfo.cs">
@@ -57,10 +53,6 @@
     <ProjectReference Include="..\..\core\NServiceBus.Saga\NServiceBus.Saga.csproj">
       <Project>{c1de5465-4694-475a-8d06-e17733c41d69}</Project>
       <Name>NServiceBus.Saga</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\core\NServiceBus\NServiceBus.csproj">
-      <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
-      <Name>NServiceBus</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\ObjectBuilder\ObjectBuilder.csproj">
       <Project>{c831b94e-6d08-404c-ba80-b8e8442ea9de}</Project>

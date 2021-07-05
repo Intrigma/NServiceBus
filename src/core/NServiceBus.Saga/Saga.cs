@@ -1,5 +1,4 @@
 using System;
-using NServiceBus;
 
 namespace NServiceBus.Saga
 {

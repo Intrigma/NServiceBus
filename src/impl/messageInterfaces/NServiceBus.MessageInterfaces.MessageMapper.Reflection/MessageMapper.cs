@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.IO;
 
 namespace NServiceBus.MessageInterfaces.MessageMapper.Reflection
 {

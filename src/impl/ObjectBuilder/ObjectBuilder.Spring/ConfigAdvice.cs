@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Reflection;
 using AopAlliance.Intercept;
 using System.Collections;
 using Common.Logging;
-using NServiceBus.ObjectBuilder;
 
 namespace NServiceBus.ObjectBuilder.Spring
 {

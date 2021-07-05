@@ -1,5 +1,3 @@
-using System;
-
 namespace NServiceBus.Saga
 {
     /// <summary>

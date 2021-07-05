@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Castle.Core.Interceptor;
-using NServiceBus.ObjectBuilder;
+﻿using Castle.Core.Interceptor;
 
 namespace NServiceBus.ObjectBuilder.CastleWindsor
 {

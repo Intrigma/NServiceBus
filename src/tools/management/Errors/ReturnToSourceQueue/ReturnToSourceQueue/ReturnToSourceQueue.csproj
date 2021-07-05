@@ -40,7 +40,6 @@
       <HintPath>..\..\..\..\..\..\external-bin\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -48,10 +47,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\core\NServiceBus\NServiceBus.csproj">
-      <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
-      <Name>NServiceBus</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NServiceBus.Tools.Management.Errors.ReturnToSourceQueue\NServiceBus.Tools.Management.Errors.ReturnToSourceQueue.csproj">
       <Project>{B9CE6C00-1AE2-4125-BD1A-A7AABA1072CA}</Project>
       <Name>NServiceBus.Tools.Management.Errors.ReturnToSourceQueue</Name>

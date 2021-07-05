@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Spring.Context.Support;
-using Spring.Objects.Factory.Support;
 using Spring.Objects.Factory.Config;
 using System.Reflection;
 using Spring.Aop.Framework;
@@ -12,6 +9,7 @@ using System.Collections;
 using NServiceBus.ObjectBuilder.Common;
 using Common.Logging;
 using NServiceBus.ObjectBuilder;
+using Spring.Objects.Factory.Support;
 
 namespace NServiceBus.ObjectBuilder.Spring
 {

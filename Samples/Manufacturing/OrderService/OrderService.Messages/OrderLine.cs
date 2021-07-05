@@ -1,5 +1,4 @@
 using System;
-using HR.Messages;
 using NServiceBus;
 
 namespace OrderService.Messages

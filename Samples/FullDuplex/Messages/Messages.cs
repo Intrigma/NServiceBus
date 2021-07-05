@@ -1,6 +1,5 @@
 using NServiceBus;
 using System;
-using System.Collections.Generic;
 
 namespace Messages
 {

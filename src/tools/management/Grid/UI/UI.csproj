@@ -39,14 +39,9 @@
     <Reference Include="Common.Logging">
       <HintPath>..\..\..\..\..\external-bin\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\external-bin\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -97,10 +92,6 @@
     <ProjectReference Include="..\..\..\..\core\NServiceBus\NServiceBus.csproj">
       <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
       <Name>NServiceBus</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\grid\NServiceBus.Grid.MessageHandlers\NServiceBus.Grid.MessageHandlers.csproj">
-      <Project>{02d21488-c00a-4dd2-97be-c0ea1cdb7206}</Project>
-      <Name>NServiceBus.Grid.MessageHandlers</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\grid\NServiceBus.Grid.Messages\NServiceBus.Grid.Messages.csproj">
       <Project>{1c22f3df-f020-491d-a680-5ae98d390140}</Project>
