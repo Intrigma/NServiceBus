@@ -26,7 +26,9 @@ namespace NServiceBus.ObjectBuilder.CastleWindsor
         /// <returns></returns>
         public IComponentConfig ConfigureProperty(string name, object value)
         {
-            handler.AddCustomDependencyValue(name, value);
+            // TODO I've commented it because I believe it is used for Property injection. And we do noy use it in Handlers
+            //handler.AddCustomDependencyValue(name, value);
+
             return this;
         }
     }

@@ -36,9 +36,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Windsor">
-      <HintPath>..\..\..\..\external-bin\Castle.Windsor.dll</HintPath>
-    </Reference>
     <Reference Include="Common.Logging">
       <HintPath>..\..\..\..\external-bin\Common.Logging.dll</HintPath>
     </Reference>
@@ -106,10 +103,6 @@
       <Project>{b6d6b021-f477-4c8c-b19e-9cb2abbca095}</Project>
       <Name>NServiceBus.Unicast.Config</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\HR.Messages\HR.Messages.csproj">
-      <Project>{BAC04722-7E15-485E-BA17-3EC46AB7FC3C}</Project>
-      <Name>HR.Messages</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OrderService.Persistence\OrderService.Persistence.csproj">
       <Project>{C34B917B-14A4-4FFB-A744-F32E9AFBAECD}</Project>
       <Name>OrderService.Persistence</Name>
@@ -117,10 +110,6 @@
     <ProjectReference Include="..\OrderService.Messages\OrderService.Messages.csproj">
       <Project>{A490D793-1D1D-486F-B808-827010EF8369}</Project>
       <Name>OrderService.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrderService\OrderService.csproj">
-      <Project>{452C5FEA-16C8-49E1-BC95-1EC55E49EECB}</Project>
-      <Name>OrderService %28Samples\Manufacturing\OrderService\OrderService%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +121,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Castle.Windsor">
+      <Version>5.1.1</Version>
+    </PackageReference>
     <PackageReference Include="NHibernate">
       <Version>5.3.9</Version>
     </PackageReference>
