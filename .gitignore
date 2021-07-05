@@ -1,0 +1,7 @@
+﻿.vs
+_ReSharper.Caches
+[Bb]in/
+[Oo]bj/
+*.user
+build/
+src/distributor/build
