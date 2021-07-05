@@ -34,13 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\external-bin\Common.Logging.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\external-bin\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="NServiceBus, Version=1.9.3.40920, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\build\output\NServiceBus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -57,6 +56,38 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\config\NServiceBus.Config\NServiceBus.Config.csproj">
+      <Project>{444faa3d-d5e1-498e-9ae1-201db619caf0}</Project>
+      <Name>NServiceBus.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\core\NServiceBus\NServiceBus.csproj">
+      <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
+      <Name>NServiceBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\impl\messageInterfaces\NServiceBus.MessageInterfaces.MessageMapper.Reflection\NServiceBus.MessageInterfaces.MessageMapper.Reflection.csproj">
+      <Project>{4df0fe9e-3608-426f-b6cb-ac55fe04d997}</Project>
+      <Name>NServiceBus.MessageInterfaces.MessageMapper.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\impl\ObjectBuilder\ObjectBuilder.Spring.Config\ObjectBuilder.Spring.Config.csproj">
+      <Project>{8c4c690f-6b4a-4908-aa7d-1af9d117e267}</Project>
+      <Name>ObjectBuilder.Spring.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\impl\Serializers\NServiceBus.Serializers.XML.Config\NServiceBus.Serializers.XML.Config.csproj">
+      <Project>{17629a13-3ed4-4e88-b70c-dffcbae96a6a}</Project>
+      <Name>NServiceBus.Serializers.XML.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\impl\unicast\NServiceBus.Unicast.Msmq\NServiceBus.Unicast.Transport.Msmq.Config\NServiceBus.Unicast.Transport.Msmq.Config.csproj">
+      <Project>{2d3d9033-200c-423e-bf8a-8fb40d8d1572}</Project>
+      <Name>NServiceBus.Unicast.Transport.Msmq.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\ObjectBuilder\ObjectBuilder.csproj">
+      <Project>{c831b94e-6d08-404c-ba80-b8e8442ea9de}</Project>
+      <Name>ObjectBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\unicast\NServiceBus.Unicast.Config\NServiceBus.Unicast.Config.csproj">
+      <Project>{b6d6b021-f477-4c8c-b19e-9cb2abbca095}</Project>
+      <Name>NServiceBus.Unicast.Config</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Messages\Messages.csproj">
       <Project>{20F613ED-C871-477C-B1E4-48B96CACF794}</Project>
       <Name>Messages %28Samples\FullDuplex\Messages%29</Name>

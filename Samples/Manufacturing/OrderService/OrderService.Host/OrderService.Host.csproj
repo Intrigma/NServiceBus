@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\..\..\..\external-bin\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\..\external-bin\Common.Logging.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\external-bin\Iesi.Collections.dll</HintPath>
@@ -45,10 +51,6 @@
     <Reference Include="NHibernate, Version=2.0.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\external-bin\NHibernate.dll</HintPath>
-    </Reference>
-    <Reference Include="NServiceBus, Version=1.9.3.40920, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\build\output\NServiceBus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -62,6 +64,54 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\config\NServiceBus.Config\NServiceBus.Config.csproj">
+      <Project>{444faa3d-d5e1-498e-9ae1-201db619caf0}</Project>
+      <Name>NServiceBus.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\config\NServiceBus.Saga.Config\NServiceBus.Saga.Config.csproj">
+      <Project>{ac4efbfd-cc81-4401-b24c-380a900b3c14}</Project>
+      <Name>NServiceBus.Saga.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\core\NServiceBus.Saga\NServiceBus.Saga.csproj">
+      <Project>{c1de5465-4694-475a-8d06-e17733c41d69}</Project>
+      <Name>NServiceBus.Saga</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\core\NServiceBus\NServiceBus.csproj">
+      <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
+      <Name>NServiceBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\grid\NServiceBus.Grid.MessageHandlers\NServiceBus.Grid.MessageHandlers.csproj">
+      <Project>{02d21488-c00a-4dd2-97be-c0ea1cdb7206}</Project>
+      <Name>NServiceBus.Grid.MessageHandlers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\impl\ObjectBuilder\ObjectBuilder.CastleWindsor.Config\ObjectBuilder.CastleWindsor.Config.csproj">
+      <Project>{a5c76dc4-8614-4ff5-b417-90f860354a23}</Project>
+      <Name>ObjectBuilder.CastleWindsor.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\impl\SagaPersisters\NHibernateSagaPersister\NServiceBus.SagaPersisters.NHibernate.Config\NServiceBus.SagaPersisters.NHibernate.Config.csproj">
+      <Project>{880c2b7b-6bfd-46e6-ab9c-29a4c298aba3}</Project>
+      <Name>NServiceBus.SagaPersisters.NHibernate.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\impl\Serializers\NServiceBus.Serializers.XML.Config\NServiceBus.Serializers.XML.Config.csproj">
+      <Project>{17629a13-3ed4-4e88-b70c-dffcbae96a6a}</Project>
+      <Name>NServiceBus.Serializers.XML.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\impl\unicast\NServiceBus.Unicast.Msmq\NServiceBus.Unicast.Transport.Msmq.Config\NServiceBus.Unicast.Transport.Msmq.Config.csproj">
+      <Project>{2d3d9033-200c-423e-bf8a-8fb40d8d1572}</Project>
+      <Name>NServiceBus.Unicast.Transport.Msmq.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\impl\unicast\NServiceBus.Unicast.Subscriptions.DB\NServiceBus.Unicast.Subscriptions.DB.Config\NServiceBus.Unicast.Subscriptions.DB.Config.csproj">
+      <Project>{4a178990-a30d-437c-a7b2-775348abf5de}</Project>
+      <Name>NServiceBus.Unicast.Subscriptions.DB.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\ObjectBuilder\ObjectBuilder.csproj">
+      <Project>{c831b94e-6d08-404c-ba80-b8e8442ea9de}</Project>
+      <Name>ObjectBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\unicast\NServiceBus.Unicast.Config\NServiceBus.Unicast.Config.csproj">
+      <Project>{b6d6b021-f477-4c8c-b19e-9cb2abbca095}</Project>
+      <Name>NServiceBus.Unicast.Config</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\HR.Messages\HR.Messages.csproj">
       <Project>{BAC04722-7E15-485E-BA17-3EC46AB7FC3C}</Project>
       <Name>HR.Messages</Name>

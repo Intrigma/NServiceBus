@@ -38,10 +38,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\external-bin\NHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="NServiceBus, Version=1.9.3.41221, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\build\output\NServiceBus.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -54,6 +50,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\core\NServiceBus.Saga\NServiceBus.Saga.csproj">
+      <Project>{c1de5465-4694-475a-8d06-e17733c41d69}</Project>
+      <Name>NServiceBus.Saga</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\src\core\NServiceBus\NServiceBus.csproj">
+      <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
+      <Name>NServiceBus</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OrderService.Messages\OrderService.Messages.csproj">
       <Project>{A490D793-1D1D-486F-B808-827010EF8369}</Project>
       <Name>OrderService.Messages</Name>

@@ -35,19 +35,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NServiceBus, Version=1.9.3.40920, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\build\output\NServiceBus.dll</HintPath>
-    </Reference>
-    <Reference Include="NServiceBus.ObjectBuilder, Version=1.9.3.39473, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\build\NServiceBus.ObjectBuilder.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\external-bin\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\CommonAssemblyInfo.cs">
@@ -57,6 +49,24 @@
     <Compile Include="IWorkerAvailabilityManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadyMessageHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\NServiceBus\NServiceBus.csproj">
+      <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
+      <Name>NServiceBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\grid\NServiceBus.Grid.MessageHandlers\NServiceBus.Grid.MessageHandlers.csproj">
+      <Project>{02d21488-c00a-4dd2-97be-c0ea1cdb7206}</Project>
+      <Name>NServiceBus.Grid.MessageHandlers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ObjectBuilder\ObjectBuilder.csproj">
+      <Project>{c831b94e-6d08-404c-ba80-b8e8442ea9de}</Project>
+      <Name>ObjectBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\unicast\NServiceBus.Unicast.Transport\NServiceBus.Unicast.Transport.csproj">
+      <Project>{d9628493-605a-4259-add3-7732f0deffbb}</Project>
+      <Name>NServiceBus.Unicast.Transport</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

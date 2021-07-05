@@ -35,19 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NServiceBus, Version=1.9.3.40920, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\build\output\NServiceBus.dll</HintPath>
-    </Reference>
-    <Reference Include="NServiceBus.Unicast.Distributor, Version=1.0.0.1680, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\build\NServiceBus.Unicast.Distributor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +45,20 @@
     </Compile>
     <Compile Include="MsmqWorkerAvailabilityManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\NServiceBus\NServiceBus.csproj">
+      <Project>{73867d40-8cbb-48e9-bffa-12bbdd48a341}</Project>
+      <Name>NServiceBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\impl\unicast\NServiceBus.Unicast.Msmq\NServiceBus.Unicast.Transport.Msmq.csproj">
+      <Project>{487809ce-0b5d-4425-a6ca-06f7c444dbcc}</Project>
+      <Name>NServiceBus.Unicast.Transport.Msmq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NServiceBus.Unicast.Distributor\NServiceBus.Unicast.Distributor.csproj">
+      <Project>{d142d372-c9fa-4505-a6eb-e919746f0ff1}</Project>
+      <Name>NServiceBus.Unicast.Distributor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,9 +2,7 @@ using System;
 using NServiceBus;
 using Common.Logging;
 using NServiceBus.Grid.MessageHandlers;
-using NServiceBus.ObjectBuilder;
 using Timeout.MessageHandlers;
-using NServiceBus.MessageInterfaces.MessageMapper.Reflection;
 
 namespace Timeout.Manager
 {
