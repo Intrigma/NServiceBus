@@ -9,7 +9,7 @@
     <AssemblyName>NServiceBus.ObjectBuilder</AssemblyName>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\NServiceBus.snk</AssemblyOriginatorKeyFile>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Prefer32Bit>false</Prefer32Bit>
     <Deterministic>false</Deterministic>
